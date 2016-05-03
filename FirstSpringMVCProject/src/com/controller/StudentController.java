@@ -23,7 +23,7 @@ public class StudentController {
 	}
 
 	@RequestMapping(value = "/submitAdmissionForm.html", method = RequestMethod.POST)
-	public ModelAndView submitAdmissionForm(@ModelAttribute("student1") Student student1) {
+	public ModelAndView submitAdmissionForm(@ModelAttribute("student1") Student student1 , @ModelAttribute("address1") address adsress1) {
 		ModelAndView model1 = new ModelAndView("AdmissionSuccess");
 		return model1;
 	}

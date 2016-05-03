@@ -2,6 +2,7 @@ package com.controller;
 
 public class Student {
 
+	private int id;
 	private String firstname;
 	private String lastname;
 	private String address;
@@ -22,6 +23,12 @@ public class Student {
 	}
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 }
